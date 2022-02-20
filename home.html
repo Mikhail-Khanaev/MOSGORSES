@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220220031615">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220220142152">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,15 +32,15 @@
 								<li class="menu__item"><a data-goto-header data-goto=".price" href="" class="menu__link">цены</a></li>
 								<li class="menu__item"><a data-goto-header data-goto=".about" href="" class="menu__link">методы</a>
 								</li>
-								<li class="menu__item"><a data-goto-header data-goto="." href="" class="menu__link">видеоотчёт</a></li>
-								<li class="menu__item"><a data-goto-header data-goto="." href="" class="menu__link">свидетельства</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".report" href="" class="menu__link">видеоотчёт</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".certificates" href="" class="menu__link">свидетельства</a></li>
 								<li class="menu__item"><a data-goto-header data-goto="." href="" class="menu__link">о
 										компании</a></li>
 							</ul>
 						</nav>
 						<div class="header__tel tel-header">
 							<a href="tel:74950857733" class="tel-header__call _icon-tel">+7(495)085-77-33</a>
-							<a data-da=".menu__list,800,last" href="tel:74950857733" class="tel-header__order button">Заказать
+							<a data-da=".menu__list,800,last" data-popup="#popup" href="tel:74950857733" class="tel-header__order button">Заказать
 								звонок</a>
 						</div>
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -68,7 +68,7 @@
 									<li class="intro__item _icon-check">Заключаем договор</li>
 								</ul>
 
-								<a href="#" class="intro__button button">Вызвать дезинсектора</a>
+								<a href="#" data-popup="#popup" class="intro__button button">Вызвать дезинсектора</a>
 							</div>
 							<div class="text-intro__list-mob">
 								<ul class="intro__list intro__list-2">
@@ -405,6 +405,227 @@
 								Грызунами, насекомыми, плесенью
 							</p>
 						</div>
+					</div> <!-- consequences__cards -->
+				</div> <!-- consequences__container -->
+			</section> <!-- consequences -->
+			<div class="block-2">
+				<div class="block-2__container">
+					<picture><source srcset="img/block-2/back.webp" type="image/webp"><img class="block-2__background" src="img/block-2/back.png" alt="Background"></picture>
+					<div class="block-2__sections">
+						<section class="safety">
+							<div class="safety__container">
+								<h2 class="safety__title title">Используем безопасные средства</h2>
+								<div class="safety__cards">
+
+									<div class="safety__card card-safety">
+										<div class="card-safety__image">
+											<img src="img/safety/1.svg" alt="1">
+										</div>
+										<div class="card-safety__text">
+											Для детей
+										</div>
+									</div>
+									<div class="safety__card card-safety">
+										<div class="card-safety__image">
+											<img src="img/safety/2.svg" alt="2">
+										</div>
+										<div class="card-safety__text">
+											Для домашних животных
+										</div>
+									</div>
+									<div class="safety__card card-safety">
+										<div class="card-safety__image">
+											<img src="img/safety/3.svg" alt="3">
+										</div>
+										<div class="card-safety__text">
+											Для ремонта и техники
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+						<section class="places">
+							<div class="places__container">
+								<h2 class="places__title title">Можем произвести обработку где угодно</h2>
+								<div class="places__cards">
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/1.svg" alt="1">
+										</div>
+										<div class="card-safety__text">
+											Квартиры и дома
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/2.svg" alt="2">
+										</div>
+										<div class="card-safety__text">
+											Офисные помещения
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/3.svg" alt="3">
+										</div>
+										<div class="card-safety__text">
+											Промышленные
+											объекты
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/4.svg" alt="4">
+										</div>
+										<div class="card-safety__text">
+											Гостиничный
+											бизнес
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/5.svg" alt="5">
+										</div>
+										<div class="card-safety__text">
+											Медицинские
+											учреждения
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/6.svg" alt="6">
+										</div>
+										<div class="card-safety__text">
+											Розничная
+											торговля
+
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/7.svg" alt="7">
+										</div>
+										<div class="card-safety__text">
+											Предприятия
+											общепита
+
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/8.svg" alt="8">
+										</div>
+										<div class="card-safety__text">
+											Транспортные
+											средства
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="block-2__image">
+						<picture><source srcset="img/block-2/1.webp" type="image/webp"><img src="img/block-2/1.png" alt="1"></picture>
+					</div>
+				</div> <!-- block-2__container -->
+			</div> <!-- block-2 -->
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Отзывы Клиентов</h2>
+					<div class="reviews__images">
+
+						<div class="reviews__image">
+							<picture><source srcset="img/rewiews/1.webp" type="image/webp"><img src="img/rewiews/1.png" alt="1"></picture>
+						</div>
+						<div class="reviews__image">
+							<picture><source srcset="img/rewiews/2.webp" type="image/webp"><img src="img/rewiews/2.png" alt="2"></picture>
+						</div>
+						<div class="reviews__image reviews__image">
+							<picture><source srcset="img/rewiews/3.webp" type="image/webp"><img src="img/rewiews/3.png" alt="3"></picture>
+						</div>
+
+					</div> <!-- reviews__images -->
+				</div> <!-- reviews__container -->
+			</section> <!-- reviews -->
+			<section class="report">
+				<div class="report__container">
+					<h2 class="report__title title">Видеоотчёт нашей работы</h2>
+					<div class="report__videos videos">
+
+						<div class="videos__body">
+							<iframe src="https://www.youtube.com/embed/5vqFty6V3bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="videos__body videos__body-2">
+							<iframe src="https://www.youtube.com/embed/5vqFty6V3bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+					</div> <!-- report__videos -->
+				</div> <!-- report__container -->
+			</section> <!-- report -->
+			<section class="certificates">
+				<div class="certificates__container">
+					<h2 class="certificates__title title">Свидетельства</h2>
+
+					<div class="certificates__cards">
+
+						<div class="certificates__card card-certificate">
+							<div class="card-certificate__image-ibg">
+								<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+							</div>
+						</div>
+						<div class="certificates__card card-certificate">
+							<div class="card-certificate__image-ibg">
+								<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+							</div>
+						</div>
+						<div class="certificates__card card-certificate">
+							<div class="card-certificate__image-ibg">
+								<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+							</div>
+						</div>
+						<div class="certificates__card card-certificate">
+							<div class="card-certificate__image-ibg">
+								<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+							</div>
+						</div>
+						<div class="certificates__card card-certificate">
+							<div class="card-certificate__image-ibg">
+								<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+							</div>
+						</div>
+						<div class="certificates__card card-certificate">
+							<div class="card-certificate__image-ibg">
+								<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+							</div>
+						</div>
+
+					</div> <!-- certificates__cards -->
+				</div> <!-- certificates__container -->
+			</section> <!-- certificates -->
+			<section class="brands">
+				<div class="brands__container">
+					<h2 class="brands__title title">Нам доверяют</h2>
+					<div class="brands__items">
+
+						<div class="brands__item item-brand">
+							<picture><source srcset="img/brands/1.webp" type="image/webp"><img src="img/brands/1.png" alt="1"></picture>
+						</div>
+						<div class="brands__item item-brand">
+							<picture><source srcset="img/brands/2.webp" type="image/webp"><img src="img/brands/2.png" alt="2"></picture>
+						</div>
+						<div class="brands__item item-brand">
+							<picture><source srcset="img/brands/3.webp" type="image/webp"><img src="img/brands/3.png" alt="3"></picture>
+						</div>
+						<div class="brands__item item-brand">
+							<picture><source srcset="img/brands/4.webp" type="image/webp"><img src="img/brands/4.png" alt="4"></picture>
+						</div>
+						<div class="brands__item item-brand">
+							<picture><source srcset="img/brands/5.webp" type="image/webp"><img src="img/brands/5.png" alt="5"></picture>
+						</div>
+						<div class="brands__item item-brand">
+							<picture><source srcset="img/brands/6.webp" type="image/webp"><img src="img/brands/6.png" alt="6"></picture>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -414,19 +635,30 @@
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<picture><source srcset="img/popup.webp" type="image/webp"><img class="popoup-background" src="img/popup.png" alt="popup background"></picture>
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<h2 class="popup__tilte title">Заказать звонок</h2>
+					<p class="popup__subtitle">Перезвоним в течении 5 минут!</p>
+
+					<form data-ajax class="popup-form" method="POST" action="sendmail.php">
+						<div class="popup-form__item">
+							<input data-required autocomplete="off" type="text" name="form[]" data-error="" placeholder="Ваше имя" class="popup-form__input input">
+						</div>
+						<div class="popup-form__item">
+							<input data-inputmask="'mask': '+7 (999) 999-99-99'" data-required autocomplete="off" type="tel" name="form[]" data-error="" placeholder="Ваш телефон" class="popup-form__input input">
+						</div>
+						<button type="submit" class="popup-form__button button">Отправить</button>
+					</form>
+
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220220031615"></script>
+	<script src="js/app.min.js?_v=20220220142152"></script>
 </body>
 
 </html>
