@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220220142152">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220220150920">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 								</li>
 								<li class="menu__item"><a data-goto-header data-goto=".report" href="" class="menu__link">видеоотчёт</a></li>
 								<li class="menu__item"><a data-goto-header data-goto=".certificates" href="" class="menu__link">свидетельства</a></li>
-								<li class="menu__item"><a data-goto-header data-goto="." href="" class="menu__link">о
+								<li class="menu__item"><a data-goto-header data-goto=".about-nums" href="" class="menu__link">о
 										компании</a></li>
 							</ul>
 						</nav>
@@ -548,21 +548,28 @@
 					</div> <!-- reviews__images -->
 				</div> <!-- reviews__container -->
 			</section> <!-- reviews -->
-			<section class="report">
+
+			<!-- <section class="report">
 				<div class="report__container">
 					<h2 class="report__title title">Видеоотчёт нашей работы</h2>
 					<div class="report__videos videos">
 
 						<div class="videos__body">
-							<iframe src="https://www.youtube.com/embed/5vqFty6V3bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/5vqFty6V3bY" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
 						</div>
 						<div class="videos__body videos__body-2">
-							<iframe src="https://www.youtube.com/embed/5vqFty6V3bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/5vqFty6V3bY" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
 						</div>
 
-					</div> <!-- report__videos -->
-				</div> <!-- report__container -->
-			</section> <!-- report -->
+					</div>
+				</div>
+			</section> -->
 			<section class="certificates">
 				<div class="certificates__container">
 					<h2 class="certificates__title title">Свидетельства</h2>
@@ -626,9 +633,37 @@
 						<div class="brands__item item-brand">
 							<picture><source srcset="img/brands/6.webp" type="image/webp"><img src="img/brands/6.png" alt="6"></picture>
 						</div>
-					</div>
+					</div> <!-- brands__item -->
+				</div> <!-- brands__container -->
+			</section> <!-- brands -->
+			<div class="block-3">
+				<picture><source srcset="img/block-3/back.webp" type="image/webp"><img class="block-3__background" src="img/block-3/back.png" alt="Background"></picture>
+				<div class="block-3__sections">
+					<section class="feedback">
+						<div class="feedback__container">
+							<div class="feedback__body">
+								<div class="feedback__form-wrapper">
+									<h2 class="feedback__title title">Остались вопросы?</h2>
+									<div class="feedback__subtitle">Перезвоним в течении 5 минут!</div>
+									<form data-ajax method="POST" action="sendmail.php" class="feedback__form form-feedback">
+										<div class="form-feedback__body">
+											<input data-required autocomplete="off" type="text" name="form[]" data-error="" placeholder="Ваше имя" class="popup-form__input input">
+											<input data-inputmask="'mask': '+7 (999) 999-99-99'" data-required autocomplete="off" type="tel" name="form[]" data-error="" placeholder="Ваш телефон" class="popup-form__input input">
+											<button type="submit" class="button">Отправить</button>
+										</div>
+									</form>
+								</div>
+								<div class="feedback__image">
+									<picture><source srcset="img/block-3/1.webp" type="image/webp"><img src="img/block-3/1.png" alt="1"></picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="about-nums">
+
+					</section>
 				</div>
-			</section>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -658,7 +693,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220220142152"></script>
+	<script src="js/app.min.js?_v=20220220150920"></script>
 </body>
 
 </html>
