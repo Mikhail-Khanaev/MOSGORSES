@@ -1,253 +1,824 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220221151819">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «MOSGORSES»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «MOSGORSES»</h1>
-		<div class="rootpage__info">
-			<!-- Особенности проекта -->
+	<div class="wrapper">
+		<header data-lp class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__menu menu">
+						<a href="#" class="header__logo logo-header">
+							<div class="logo-header__image">
+								<img src="img/logo.svg" alt="Логотип">
+							</div>
+							<!-- <div class="logo-header__text">
+						<p class="logo-header__title">мосгорсэс</p>
+						<p class="logo-header__subtitle">САНИТАРНАЯ СЛУЖБА</p>
+					</div> -->
+						</a>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a data-goto-header data-goto=".price" href="" class="menu__link">цены</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".about" href="" class="menu__link">методы</a>
+								</li>
+								<li class="menu__item"><a data-goto-header data-goto=".report" href="" class="menu__link">видеоотчёт</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".certificates" href="" class="menu__link">свидетельства</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".about-nums" href="" class="menu__link">о
+										компании</a></li>
+							</ul>
+						</nav>
+						<div class="header__tel tel-header">
+							<a href="tel:74950857733" class="tel-header__call _icon-tel">+7(495)085-77-33</a>
+							<a data-da=".menu__list,800,last" data-popup="#popup" href="tel:74950857733" class="tel-header__order button">Заказать
+								звонок</a>
+						</div>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="intro">
+				<picture><source srcset="img/intro/background.webp" type="image/webp"><img class="intro__background" src="img/intro/background.png" alt="Задний фон блока intro"></picture>
+				<div class="intro__container">
+					<div class="intro__body">
+						<div class="intro__text text-intro">
+							<div class="text-intro__wrapper">
+								<h1 class="intro__title">
+									<span class="intro__title-wrapper"> Из<span class="intro__bug _icon-bug">б</span>авим</span>
+									<span class="intro__title-color"><br>от насекомых</span>
+								</h1>
+								<div class="intro__subtitle">с гарантией 3 года!</div>
+
+								<ul class="intro__list intro__list-1">
+									<li class="intro__item _icon-check">Безопасные препараты</li>
+									<li class="intro__item _icon-check">Официальная санэпидемстанция</li>
+									<li class="intro__item _icon-check">Соблюдаем санитарные правила</li>
+									<li class="intro__item _icon-check">Заключаем договор</li>
+								</ul>
+
+								<a href="#" data-popup="#popup" class="intro__button button">Вызвать дезинсектора</a>
+							</div>
+							<div class="text-intro__list-mob">
+								<ul class="intro__list intro__list-2">
+									<li class="intro__item _icon-check">Безопасные препараты</li>
+									<li class="intro__item _icon-check">Официальная санэпидемстанция</li>
+									<li class="intro__item _icon-check">Соблюдаем санитарные правила</li>
+									<li class="intro__item _icon-check">Заключаем договор</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="intro__image image-intro">
+							<div class="image-intro__image">
+								<picture><source srcset="img/intro/1.webp" type="image/webp"><img src="img/intro/1.png" alt="фото работника"></picture>
+								<div class="image-intro__info image-intro__info-1">
+									<span class="image-intro__info-text">Срочный выезд</span>
+									<span class="image-intro__info-color">0 руб</span>
+								</div>
+
+								<div class="image-intro__info image-intro__info-2">
+									<span class="image-intro__info-text">Приедем</span>
+									<span class="image-intro__info-color">за 30 минут</span>
+								</div>
+
+								<div class="image-intro__info image-intro__info-3">
+									<span class="image-intro__info-text">Обработка</span>
+									<span class="image-intro__info-color">за 1 час</span>
+								</div>
+
+								<div class="image-intro__discount">
+									<span class="image-intro__discount-text image-intro__discount-text-1">Сегодня</span>
+									<span class="image-intro__discount-text image-intro__discount-text-2">скидка</span>
+									<span class="image-intro__discount-value">-20%</span>
+								</div>
+							</div>
+						</div>
+					</div> <!-- intro__body -->
+				</div> <!-- intro__container -->
+			</section> <!-- intro -->
+			<div class="block">
+				<picture><source srcset="img/block/1.webp" type="image/webp"><img src="img/block/1.png" alt="background" class="block-bg"></picture>
+				<section class="price">
+					<div class="price__container">
+						<h2 class="price__title title">Цены на обработку</h2>
+
+						<div data-tabs class="price-tab">
+							<nav data-tabs-titles class="price-tab__navigation">
+								<button type="button" class="price-tab__title _tab-active">Квартира</button>
+								<button type="button" class="price-tab__title">Дом</button>
+								<button type="button" class="price-tab__title">Помещение</button>
+							</nav>
+							<div data-tabs-body class="price-tab__content">
+								<div class="price-tab__body">
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">Комната</div>
+											<div class=" card-price__price">800 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">1-комнатная квартира</div>
+											<div class=" card-price__price">1 000 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">2-комнатная квартира</div>
+											<div class=" card-price__price">1 200 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">3-комнатная квартира</div>
+											<div class=" card-price__price">1 800 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+								</div>
+								<div class="price-tab__body">
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">Комната</div>
+											<div class=" card-price__price">800 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">1-комнатная квартира</div>
+											<div class=" card-price__price">1 000 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">2-комнатная квартира</div>
+											<div class=" card-price__price">1 200 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">3-комнатная квартира</div>
+											<div class=" card-price__price">1 800 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">4-комнатная квартира</div>
+											<div class=" card-price__price">2 400 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+								</div>
+								<div class="price-tab__body">
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">Комната</div>
+											<div class=" card-price__price">800 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">1-комнатная квартира</div>
+											<div class=" card-price__price">1 000 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">2-комнатная квартира</div>
+											<div class=" card-price__price">1 200 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">3-комнатная квартира</div>
+											<div class=" card-price__price">1 800 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">4-комнатная квартира</div>
+											<div class=" card-price__price">2 400 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+									<div class="price-tab__card card-price">
+										<div class="card-price__wrapper">
+											<div class="card-price__title _icon-flat">5-комнатная квартира</div>
+											<div class=" card-price__price">3 000 ₽</div>
+										</div>
+										<button data-popup="#popup" class="card-price__button button">Заказать</и>
+									</div>
+								</div>
+							</div>
+						</div> <!-- price-tab -->
+					</div> <!-- price__container -->
+				</section> <!-- price -->
+				<section class="benefits">
+					<div class="benefits__container">
+						<h2 class="benefits__title title">В 97% случаев</h2>
+						<h4 class="benefits__subtitle">Мы избавляем от вредителей с первого раза</h4>
+
+						<div class="benefits__cards">
+							<div class="benefits__card card-benefits">
+								<div class="card-benefits__image">
+									<img src="img/benefits/1.svg" alt="1">
+								</div>
+								<h5 class="card-benefits__title">Приедем к вам 24/7</h5>
+								<div class="card-benefits__text">
+									Выезд специалиста к Вам через 1 час после звонка или в удобное для вас время
+								</div>
+							</div>
+							<div class="benefits__card card-benefits">
+								<div class="card-benefits__image">
+									<img src="img/benefits/2.svg" alt="2">
+								</div>
+								<h5 class="card-benefits__title">Гарантия возврата денег</h5>
+								<div class="card-benefits__text">
+									Если вредители вернутся, то мы вернем деньги! Гарантия, которую не дают другие
+									компании!
+								</div>
+							</div>
+							<div class="benefits__card card-benefits">
+								<div class="card-benefits__image">
+									<img src="img/benefits/3.svg" alt="3">
+								</div>
+								<h5 class="card-benefits__title">Проверенные препараты</h5>
+								<div class="card-benefits__text">
+									Мы используем проверенные импортные препараты, которые показывают максимальный
+									эффект
+								</div>
+							</div>
+							<div class="benefits__card card-benefits">
+								<div class="card-benefits__image">
+									<img src="img/benefits/4.svg" alt="4">
+								</div>
+								<h5 class="card-benefits__title">Аттестованные дезинфекторы</h5>
+								<div class="card-benefits__text">
+									Все наши сотрудники аттестованы в НИИ, что повышает качество выполнения работы.
+								</div>
+							</div>
+							<div class="benefits__card card-benefits">
+								<div class="card-benefits__image">
+									<img src="img/benefits/5.svg" alt="5">
+								</div>
+								<h5 class="card-benefits__title">Оплата по факту</h5>
+								<div class="card-benefits__text">
+									Мы берем деньги только после факта уничтожения всех паразитов в вашей квартире,
+									доме, офисе.
+								</div>
+							</div>
+							<div class="benefits__card card-benefits">
+								<div class="card-benefits__image">
+									<img src="img/benefits/6.svg" alt="6">
+								</div>
+								<h5 class="card-benefits__title">Бесплатная консультация</h5>
+								<div class="card-benefits__text">
+									Оставьте заявку и вам перезвонит опытный специалист и ответит на все вопросы.
+								</div>
+							</div>
+						</div>
+					</div> <!-- benefits__container -->
+				</section> <!-- benefits -->
+			</div> <!-- block -->
+			<section class="about">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__image">
+							<picture><source srcset="img/about/1.webp" type="image/webp"><img src="img/about/1.png" alt="Person"></picture>
+						</div>
+						<div class="about__info info-about">
+							<div class="info-about__text">
+								<h2 class="about__title title">Методы обработки</h2>
+								<div class="about__subtitle">
+									Мы используем современное высокотехнологичное оборудование.
+									У вредителей не будет ни шанса на выживание!
+								</div>
+							</div>
+							<div class="info-about__cards">
+
+								<div class="info-about__card card-info card-info-1">
+									<div class="card-info__image">
+										<img src="img/about/1.svg" alt="1">
+									</div>
+									<div class="card-info__wrapper">
+										<h4 data-da=".card-info-1, 479.98, 1" class="card-info__title">Холодный туман
+										</h4>
+										<div class="card-info__text">
+											Производимый туман состоит из мельчайших капель
+											пара с инсектицидом. Они намного мельче, чем производимые
+											опрыскивателем. По этой причине смесь капелек с воздухом равномерно оседает
+											на потолке, мебели, панелях и попадает в
+											недоступные места
+										</div>
+									</div>
+								</div>
+								<div class="info-about__card card-info card-info-2">
+									<div class="card-info__image">
+										<img src="img/about/2.svg" alt="2">
+									</div>
+									<div class="card-info__wrapper">
+										<h4 data-da=".card-info-2, 479.98, 1" class=" card-info__title">Горячий туман
+										</h4>
+										<div class="card-info__text">
+											Распыление в помещении нагретого ядохимиката. Насекомые подвергаются
+											двустороннему воздействию: Горячая обработка газом
+											и травля инсектицидом. Наиболее эффективный вариант избавления от вредителей
+										</div>
+									</div>
+								</div>
+								<div class="info-about__card card-info card-info-3 card-info-last">
+									<div class="card-info__image">
+										<img src="img/about/3.svg" alt="3">
+									</div>
+									<div class="card-info__wrapper">
+										<h4 data-da=".card-info-3, 479.98, 1" class=" card-info__title">Комплексная
+											обработка</h4>
+										<div class="card-info__text">
+											Самый мощный удар по паразитам с эффективной длительной барьерной защитой.
+											Применяется в двух случаях: когда в квартире
+											сложилась невыносимая ситуация с вредителями, либо для перестраховки на
+											случай, чтобы снова принесенные насекомые не
+											смогли в ней выжить
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- about__info -->
+					</div> <!-- about__body -->
+				</div> <!-- about__container -->
+			</section> <!-- about -->
+			<section class="consequences">
+				<picture><source srcset="img/consequences/1.webp" type="image/webp"><img class="consequences__image" src="img/consequences/1.png" alt="backround"></picture>
+				<div class="consequences__container">
+					<h2 class="consequences__title title">Что будет, если отложить обработку на потом?</h2>
+					<h4 class="consequences__subtitle">Мы избавляем от вредителей с первого раза</h4>
+
+
+					<div class="consequences__cards">
+						<div class="consequences__card card-consequences">
+							<div class="card-consequences__image">
+								<img src="img/consequences/1.svg" alt="1">
+							</div>
+							<h5 class="card-consequences__title">Бессонница</h5>
+							<p class="card-consequences__text">
+								Так как некоторые вредители живут в кровати или рядом с ней
+							</p>
+						</div>
+						<div class="consequences__card card-consequences">
+							<div class="card-consequences__image">
+								<img src="img/consequences/2.svg" alt="2">
+							</div>
+							<h5 class="card-consequences__title">Болезни</h5>
+							<p class="card-consequences__text">
+								Большинство вредителей являются переносчиком болезней
+							</p>
+						</div>
+						<div class="consequences__card card-consequences">
+							<div class="card-consequences__image">
+								<img src="img/consequences/3.svg" alt="3">
+							</div>
+							<h5 class="card-consequences__title">Порча имущества</h5>
+							<p class="card-consequences__text">
+								Грызунами, насекомыми, плесенью
+							</p>
+						</div>
+					</div> <!-- consequences__cards -->
+				</div> <!-- consequences__container -->
+			</section> <!-- consequences -->
+			<div class="block-2">
+				<div class="block-2__container">
+					<picture><source srcset="img/block-2/back.webp" type="image/webp"><img class="block-2__background" src="img/block-2/back.png" alt="Background"></picture>
+					<div class="block-2__sections">
+						<section class="safety">
+							<div class="safety__container">
+								<h2 class="safety__title title">Используем безопасные средства</h2>
+								<div class="safety__cards">
+
+									<div class="safety__card card-safety">
+										<div class="card-safety__image">
+											<img src="img/safety/1.svg" alt="1">
+										</div>
+										<div class="card-safety__text">
+											Для детей
+										</div>
+									</div>
+									<div class="safety__card card-safety">
+										<div class="card-safety__image">
+											<img src="img/safety/2.svg" alt="2">
+										</div>
+										<div class="card-safety__text">
+											Для домашних животных
+										</div>
+									</div>
+									<div class="safety__card card-safety">
+										<div class="card-safety__image">
+											<img src="img/safety/3.svg" alt="3">
+										</div>
+										<div class="card-safety__text">
+											Для ремонта и техники
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+						<section class="places">
+							<div class="places__container">
+								<h2 class="places__title title">Можем произвести обработку где угодно</h2>
+								<div class="places__cards">
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/1.svg" alt="1">
+										</div>
+										<div class="card-safety__text">
+											Квартиры и дома
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/2.svg" alt="2">
+										</div>
+										<div class="card-safety__text">
+											Офисные помещения
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/3.svg" alt="3">
+										</div>
+										<div class="card-safety__text">
+											Промышленные
+											объекты
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/4.svg" alt="4">
+										</div>
+										<div class="card-safety__text">
+											Гостиничный
+											бизнес
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/5.svg" alt="5">
+										</div>
+										<div class="card-safety__text">
+											Медицинские
+											учреждения
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/6.svg" alt="6">
+										</div>
+										<div class="card-safety__text">
+											Розничная
+											торговля
+
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/7.svg" alt="7">
+										</div>
+										<div class="card-safety__text">
+											Предприятия
+											общепита
+
+										</div>
+									</div>
+									<div class="places__card card-places card-safety">
+										<div class="card-safety__image">
+											<img src="img/places/8.svg" alt="8">
+										</div>
+										<div class="card-safety__text">
+											Транспортные
+											средства
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="block-2__image">
+						<picture><source srcset="img/block-2/1.webp" type="image/webp"><img src="img/block-2/1.png" alt="1"></picture>
+					</div>
+				</div> <!-- block-2__container -->
+			</div> <!-- block-2 -->
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Отзывы Клиентов</h2>
+					<div class="reviews__images">
+
+						<div class="reviews__slider swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__image">
+										<picture><source srcset="img/rewiews/1.webp" type="image/webp"><img src="img/rewiews/1.png" alt="1"></picture>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__image">
+										<picture><source srcset="img/rewiews/2.webp" type="image/webp"><img src="img/rewiews/2.png" alt="2"></picture>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__image reviews__image">
+										<picture><source srcset="img/rewiews/3.webp" type="image/webp"><img src="img/rewiews/3.png" alt="3"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+					</div> <!-- reviews__images -->
+				</div> <!-- reviews__container -->
+			</section> <!-- reviews -->
+			<section class="report">
+				<div class="report__container">
+					<h2 class="report__title title">Видеоотчёт нашей работы</h2>
+
+					<div class="report__videos videos">
+
+						<div class="report__slider swiper">
+							<div class="report__wrapper swiper-wrapper">
+								<div class="report__slide swiper-slide">
+									<div class="videos__body">
+										<video preload="metadata" controls poster="img/poster.png" src="img/video.mp4"></video>
+									</div>
+								</div>
+								<div class="report__slide swiper-slide">
+									<div class="videos__body ">
+										<div class="videos__body">
+											<video preload="metadata" controls poster="img/poster.png" src="img/video.mp4"></video>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="certificates">
+				<div class="certificates__container">
+					<h2 class="certificates__title title">Свидетельства</h2>
+
+					<div class="certificates__cards">
+
+						<div class="certificates__slider swiper">
+							<div class="certificates__wrapper swiper-wrapper">
+								<div class="certificates__slide swiper-slide">
+									<div class="certificates__card card-certificate">
+										<div class="card-certificate__image-ibg">
+											<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="certificates__slide swiper-slide">
+									<div class="certificates__card card-certificate">
+										<div class="card-certificate__image-ibg">
+											<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="certificates__slide swiper-slide">
+									<div class="certificates__card card-certificate">
+										<div class="card-certificate__image-ibg">
+											<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="certificates__slide swiper-slide">
+									<div class="certificates__card card-certificate">
+										<div class="card-certificate__image-ibg">
+											<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="certificates__slide swiper-slide">
+									<div class="certificates__card card-certificate">
+										<div class="card-certificate__image-ibg">
+											<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+										</div>
+									</div>
+								</div>
+								<div class="certificates__slide swiper-slide">
+									<div class="certificates__card card-certificate">
+										<div class="card-certificate__image-ibg">
+											<picture><source srcset="img/certificate.webp" type="image/webp"><img src="img/certificate.jpg" alt="Свидетельства"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+					</div> <!-- certificates__cards -->
+				</div> <!-- certificates__container -->
+			</section> <!-- certificates -->
+			<section class="brands">
+				<div class="brands__container">
+					<h2 class="brands__title title">Нам доверяют</h2>
+					<div class="brands__items">
+
+						<div class="brands__slider swiper">
+							<div class="brands__wrapper swiper-wrapper">
+								<div class="brands__slide swiper-slide">
+									<div class="brands__item item-brand">
+										<picture><source srcset="img/brands/1.webp" type="image/webp"><img src="img/brands/1.png" alt="1"></picture>
+									</div>
+								</div>
+								<div class="brands__slide swiper-slide">
+									<div class="brands__item item-brand">
+										<picture><source srcset="img/brands/2.webp" type="image/webp"><img src="img/brands/2.png" alt="2"></picture>
+									</div>
+								</div>
+								<div class="brands__slide swiper-slide">
+									<div class="brands__item item-brand">
+										<picture><source srcset="img/brands/3.webp" type="image/webp"><img src="img/brands/3.png" alt="3"></picture>
+									</div>
+								</div>
+								<div class="brands__slide swiper-slide">
+									<div class="brands__item item-brand">
+										<picture><source srcset="img/brands/4.webp" type="image/webp"><img src="img/brands/4.png" alt="4"></picture>
+									</div>
+								</div>
+								<div class="brands__slide swiper-slide">
+									<div class="brands__item item-brand">
+										<picture><source srcset="img/brands/5.webp" type="image/webp"><img src="img/brands/5.png" alt="5"></picture>
+									</div>
+								</div>
+								<div class="brands__slide swiper-slide">
+									<div class="brands__item item-brand">
+										<picture><source srcset="img/brands/6.webp" type="image/webp"><img src="img/brands/6.png" alt="6"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- brands__item -->
+				</div> <!-- brands__container -->
+			</section> <!-- brands -->
+			<div class="block-3">
+				<picture><source srcset="img/block-3/back.webp" type="image/webp"><img class="block-3__background" src="img/block-3/back.png" alt="Background"></picture>
+				<div class="block-3__sections">
+					<section class="feedback">
+						<div class="feedback__container">
+							<div class="feedback__body">
+								<div class="feedback__form-wrapper">
+									<h2 class="feedback__title title">Остались вопросы?</h2>
+									<div class="feedback__subtitle">Перезвоним в течении 5 минут!</div>
+									<form data-ajax method="POST" action="sendmail.php" class="feedback__form form-feedback">
+										<div class="form-feedback__body">
+											<input data-required autocomplete="off" type="text" name="username" data-error="" placeholder="Ваше имя" class="popup-form__input input">
+											<input data-inputmask="'mask': '+7 (999) 999-99-99'" data-required autocomplete="off" type="tel" name="usertel" data-error="" placeholder="Ваш телефон" class="popup-form__input input">
+											<button type="submit" class="button">Отправить</button>
+										</div>
+									</form>
+								</div>
+								<div class="feedback__image">
+									<picture><source srcset="img/block-3/1.webp" type="image/webp"><img src="img/block-3/1.png" alt="1"></picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="about-nums">
+						<div class="about-nums__container">
+							<h2 class="about-nums__title title">о компании в цифрах</h2>
+							<div class="about-nums__body">
+
+								<div class="about-nums__item item-about-num">
+									<div class="item-about-num__body">
+										<div class="item-about-num__num">12</div>
+										<div class="item-about-num__text">Лет на рынке</div>
+									</div>
+								</div>
+								<div class="about-nums__item item-about-num">
+									<div class="item-about-num__body">
+										<div class="item-about-num__num">45</div>
+										<div class="item-about-num__text">Дезинсекторов в штате</div>
+									</div>
+								</div>
+								<div class="about-nums__item item-about-num">
+									<div class="item-about-num__body">
+										<div class="item-about-num__num">9000</div>
+										<div class="item-about-num__text">Успешных обработок</div>
+									</div>
+								</div>
+								<div class="about-nums__item item-about-num">
+									<div class="item-about-num__body">
+										<div class="item-about-num__num">30%</div>
+										<div class="item-about-num__text">Клиентов по рекомендации</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo header__logo logo-header">
+						<div class="logo-header__image">
+							<img src="img/logo-3.svg" alt="Логотип">
+						</div>
+					</a>
+					<div class="footer__nav">
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" data-goto-header data-goto=".price" class="footer__link">Цены</a>
+							</li>
+							<li class="footer__item"><a href="#" data-goto-header data-goto=".about" class="footer__link">Методы</a>
+							</li>
+							<li class="footer__item"><a href="#" data-goto-header data-goto=".report" class="footer__link">Видеоотчёт</a>
+							</li>
+							<li class="footer__item"><a href="#" data-goto-header data-goto=".certificates" class="footer__link">Свидетельства</a>
+							</li>
+							<li class="footer__item"><a href="#" data-goto-header data-goto=".about-nums" class="footer__link">О
+									компании</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__tel tel-footer">
+						<a href="tel:74950857733" class="tel-footer__call _icon-tel">+7 (495) 085-77-33</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="footer-bottom">
+			<div class="footer-bottom__body">
+				<a href="tel:74950857733" class="footer-bottom__call footer-bottom__call-1 _icon-tel">Позвонить</a>
+				<a href="#" data-popup="#popup" class="footer-bottom__call footer-bottom__call-2 _icon-tel">Заказать звонок</a>
+			</div>
 		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Страницы в разработке:</h2>
-		<ol class="rootpage__list">
-		</ol>
-		<!-- <h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol> -->
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад хорошему отзыву</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a class="contact-link" href="mailto:khanaevcsshtml@gmail.com"> khanaevcsshtml@gmail.com</a></p>
-			<p>Телефон: <a class="contact-link" href="tel:+79622558812"> +7-962-255-88-12</a></p>
-			<p>Телеграм: <a class="contact-link" target="_blank" href="https://t.me/Berl1ngo"> Berl1ngo</a>
-			</p>
+		<div data-lp data-popup="#popup" class="call__widget">
+			<div class="call__widget-button">
+				<div class="call__widget-button-icon">
+
+				</div>
+			</div>
 		</div>
 	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<picture><source srcset="img/popup.webp" type="image/webp"><img class="popoup-background" src="img/popup.png" alt="popup background"></picture>
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<h2 class="popup__tilte title">Заказать звонок</h2>
+					<p class="popup__subtitle">Перезвоним в течении 5 минут!</p>
+
+					<form data-ajax class="popup-form" method="POST" action="sendmail.php">
+						<div class="popup-form__item">
+							<input data-required autocomplete="off" type="text" name="username" data-error="" placeholder="Ваше имя" class="popup-form__input input">
+						</div>
+						<div class="popup-form__item">
+							<input data-inputmask="'mask': '+7 (999) 999-99-99'" data-required autocomplete="off" type="tel" name="usertel" data-error="" placeholder="Ваш телефон" class="popup-form__input input">
+						</div>
+						<button type="submit" class="popup-form__button button">Отправить</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220221151819"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-height: 100%;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background: linear-gradient(140deg, #23515E, #BE838B);
-		background-repeat: no-repeat;
-		background-size: 200%;
-		animation: gradient 10s infinite;
-	}
-
-	@keyframes gradient {
-		0% {
-			background-position: 0 50%;
-		}
-
-		50% {
-			background-position: 100% 50%;
-		}
-
-		100% {
-			background-position: 0 50%;
-		}
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		position: relative;
-		color: #F5EFEB;
-		text-decoration: none;
-
-	}
-
-	@media (min-width: 768px) {
-		a:after {
-			display: block;
-			position: absolute;
-			left: 0;
-			/*изменить на right:0;, чтобы изменить направление подчёркивания */
-			width: 100%;
-			/*задаём длинну линии до наведения курсора*/
-			height: 2px;
-			/*задаём ширину линии*/
-			background-color: #F5EFEB;
-			/*задаём цвет линии*/
-			content: "";
-			transition: width 0.3s ease-out;
-			/*задаём время анимации*/
-		}
-
-		a:hover:after {
-			width: 0%;
-			/*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-		}
-	}
-
-	a:visited {
-		color: #A9C7C5;
-	}
-
-	a:visited:after {
-		background-color: #A9C7C5;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.contact-link {
-
-		transition: color .3s ease;
-	}
-
-	.contact-link:after {
-		width: 0;
-	}
-
-	.contact-link:hover {
-		color: #E2CFC9;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #F5EFEB;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #F5EFEB;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	@media (max-width: 420px) {
-		h1 {
-			font-size: 1.25rem;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 15px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #245D6B;
-
-	}
-
-	.rootpage__contacts a {
-		color: #F5EFEB;
-	}
-
-	.rootpage__tnx {
-		background: #4C6A78;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	::selection {
-		background: #81B29A;
-		/* Safari */
-	}
-
-	::-moz-selection {
-		background: #81B29A;
-		/* Firefox */
-	}
-</style>
 
 </html>
