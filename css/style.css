@@ -741,10 +741,10 @@ input[type=search] {
 
 .footer {
   padding: 1.875rem 0;
-  margin-bottom: 4.25rem;
 }
 @media (max-width: 29.99875em) {
   .footer {
+    margin-bottom: 4.25rem;
     padding: 1.25rem 0;
   }
 }
