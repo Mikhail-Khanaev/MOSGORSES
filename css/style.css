@@ -877,8 +877,8 @@ input[type=search] {
 .call__widget {
   display: block;
   position: fixed;
-  max-width: 2.5rem;
-  height: 2.5rem;
+  max-width: 5.625rem;
+  height: 5.625rem;
   bottom: 0rem;
   margin-bottom: 3.125rem;
   margin-right: 6.875rem;
@@ -892,18 +892,19 @@ input[type=search] {
   }
 }
 .call__widget-button {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 5.625rem;
+  height: 5.625rem;
   background-color: #173f5b;
   border-radius: 50%;
   animation: waves 2s infinite;
 }
 .call__widget-button-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 5.625rem;
+  height: 5.625rem;
   background-image: url("../img/icons/widget.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 30%;
   animation: tossing 1s infinite 5s;
 }
 
