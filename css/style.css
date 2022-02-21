@@ -874,6 +874,70 @@ input[type=search] {
   background-color: #173f5b;
 }
 
+.call__widget {
+  display: block;
+  position: fixed;
+  max-width: 2.5rem;
+  height: 2.5rem;
+  bottom: 0rem;
+  margin-bottom: 3.125rem;
+  margin-right: 6.875rem;
+  right: 0rem;
+  z-index: 4;
+  cursor: pointer;
+}
+@media (max-width: 50em) {
+  .call__widget {
+    display: none;
+  }
+}
+.call__widget-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #173f5b;
+  border-radius: 50%;
+  animation: waves 2s infinite;
+}
+.call__widget-button-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url("../img/icons/widget.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: tossing 1s infinite 5s;
+}
+
+@keyframes waves {
+  0% {
+    box-shadow: 0 0 0 0 #173f5b4d, 0 0 0 0 #173f5b1a;
+  }
+  50% {
+    box-shadow: 0 0 0 20px #173f5b4d, 0 0 0 10px #173f5b1a;
+  }
+  to {
+    box-shadow: 0 0 0 40px transparent, 0 0 0 20px transparent;
+  }
+}
+@keyframes tossing {
+  0% {
+    transform: rotate(-8deg);
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(8deg);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .intro {
   position: relative;
   padding-top: 10.9375rem;
