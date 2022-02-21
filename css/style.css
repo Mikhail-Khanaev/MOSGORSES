@@ -741,6 +741,7 @@ input[type=search] {
 
 .footer {
   padding: 1.875rem 0;
+  margin-bottom: 4.25rem;
 }
 @media (max-width: 29.99875em) {
   .footer {
@@ -1088,8 +1089,13 @@ input[type=search] {
 }
 @media (max-width: 29.99875em) {
   .image-intro__info-1 {
-    top: 42.0757363254%;
-    left: -20%;
+    top: 34%;
+    left: -7%;
+  }
+}
+@media (max-width: 25.625em) {
+  .image-intro__info-1 {
+    left: -19%;
   }
 }
 .image-intro__info-2 {
@@ -1098,7 +1104,12 @@ input[type=search] {
 }
 @media (max-width: 29.99875em) {
   .image-intro__info-2 {
-    left: -20%;
+    left: -8%;
+  }
+}
+@media (max-width: 25.625em) {
+  .image-intro__info-2 {
+    left: -18%;
   }
 }
 .image-intro__info-3 {
@@ -1107,8 +1118,13 @@ input[type=search] {
 }
 @media (max-width: 29.99875em) {
   .image-intro__info-3 {
-    top: 67.3211781206%;
-    left: -18%;
+    top: 75%;
+    left: -12%;
+  }
+}
+@media (max-width: 25.625em) {
+  .image-intro__info-3 {
+    left: -17%;
   }
 }
 .image-intro__discount {
@@ -1685,6 +1701,20 @@ input[type=search] {
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
 }
+@media (max-width: 29.99875em) {
+  .safety .card-safety {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .safety .card-safety__image {
+    margin: 0;
+  }
+  .safety .card-safety__text {
+    margin: 0;
+  }
+}
 
 .card-safety {
   color: #fff;
@@ -1720,6 +1750,13 @@ input[type=search] {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+@media (max-width: 29.99875em) {
+  .places__cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 }
 
 .card-places .card-safety__image {
@@ -1766,7 +1803,7 @@ input[type=search] {
 }
 @media (max-width: 29.99875em) {
   .reviews__image {
-    min-width: 12.5rem;
+    min-width: 10.9375rem;
   }
 }
 .reviews__image img {
@@ -1817,6 +1854,12 @@ input[type=search] {
   .videos__body {
     padding-bottom: 40%;
     min-width: 22.5rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .videos__body {
+    padding-bottom: 0;
+    min-height: 12.8125rem;
   }
 }
 
