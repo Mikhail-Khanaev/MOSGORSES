@@ -1887,16 +1887,16 @@ input[type=search] {
     min-width: 14.375rem;
   }
 }
-@media (max-width: 30em) {
-  .card-certificate__image-ibg {
-    min-height: 14.5rem;
-    min-width: 10.375rem;
-  }
-}
 .card-certificate__image-ibg img {
   object-fit: contain;
 }
 
+@media (max-width: 30em) {
+  .card-certificate__image-ibg {
+    min-height: 14.5rem !important;
+    min-width: 10.375rem !important;
+  }
+}
 .brands {
   padding: 1.875rem 0;
 }
