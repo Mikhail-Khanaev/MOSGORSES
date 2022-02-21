@@ -833,6 +833,11 @@ input[type=search] {
 }
 
 .footer-bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
   display: none;
 }
 @media (max-width: 29.99875em) {
@@ -1747,6 +1752,12 @@ input[type=search] {
   position: relative;
   padding-bottom: 40%;
 }
+@media (min-width: 50em) {
+  .reviews__image {
+    min-width: 25rem;
+    min-height: 30rem;
+  }
+}
 @media (max-width: 50em) {
   .reviews__image {
     padding-bottom: 70%;
@@ -1792,21 +1803,20 @@ input[type=search] {
 .videos {
   display: flex;
   gap: 1.875rem;
+  overflow: auto;
 }
 .videos__body {
   border-radius: 0.75rem;
   overflow: hidden;
   flex: 1 1 auto;
+  min-width: 40.625rem;
+  min-height: 18.75rem;
   padding-bottom: 27%;
 }
 @media (max-width: 50em) {
   .videos__body {
-    padding-bottom: 60%;
-  }
-}
-@media (max-width: 50em) {
-  .videos__body-2 {
-    display: none;
+    padding-bottom: 40%;
+    min-width: 22.5rem;
   }
 }
 
@@ -1842,12 +1852,8 @@ input[type=search] {
   margin-bottom: 1.5625rem;
 }
 .brands__items {
+  overflow: auto;
   display: flex;
-}
-@media (max-width: 78.125em) {
-  .brands__items {
-    overflow: auto;
-  }
 }
 @media (min-width: 120em) {
   .brands__items {
@@ -1957,6 +1963,11 @@ input[type=search] {
 .feedback .button {
   min-height: 3.75rem;
 }
+@media (max-width: 50em) {
+  .feedback .button {
+    width: 70%;
+  }
+}
 .feedback .title {
   line-height: 1;
   color: #fff;
@@ -1972,7 +1983,7 @@ input[type=search] {
 }
 @media (max-width: 50em) {
   .feedback .popup-form__input {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
